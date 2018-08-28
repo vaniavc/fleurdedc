@@ -1,0 +1,24 @@
+@import 'src/assets/stylesheets/container';
+@import 'src/assets/stylesheets/color';
+@import 'src/assets/stylesheets/fonts';
+
+.container {
+    position:fixed;
+    z-index:900;
+    background-color: $background;
+}
+
+.header {
+    font-size:$font-header; 
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+}
+
+.navigation {
+    padding: 10px;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
