@@ -1,0 +1,14 @@
+@import 'src/assets/stylesheets/color';
+
+/* best seller */
+img {
+    height:300px;
+    width:100%;
+    object-fit:cover;
+}
+
+.box {
+    //background:yellow; 
+    background: $white;
+    padding:5px;
+}
