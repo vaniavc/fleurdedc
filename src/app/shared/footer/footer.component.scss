@@ -1,12 +1,20 @@
 @import 'src/assets/stylesheets/container';
 
 ul {
-    margin: 0 auto;
-    list-style: none; 
-    padding: 16px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 16px;
 }
 
 .icon {
-    height:25px;
-    width:25px;
+  height: 25px;
+  width: 25px;
+}
+
+p {
+  line-height: 30px;
+}
+
+.footer {
+  height: 150px;
 }

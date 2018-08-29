@@ -10,7 +10,7 @@
 <div class="container c-gold">
     <h3 style="text-align:center">BEST SELLER</h3>
     <div class="box-item" fxLayout="row" fxLayoutGap="20px">
-        <app-box fxFlex="24" *ngFor="let flower of flowers" [flower]="flower"></app-box>
+        <app-box fxFlex="24" *ngFor="let flower of flowers | slice:0:4" [flower]="flower"></app-box>
     </div>
 </div>
 

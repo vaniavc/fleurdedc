@@ -2,13 +2,21 @@
 
 /* best seller */
 img {
-    height:300px;
-    width:100%;
-    object-fit:cover;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .box {
-    //background:yellow; 
-    background: $white;
-    padding:5px;
+  //background:yellow;
+  background: $white;
+  padding: 5px;
+  margin-bottom: 12px;
+}
+
+.box-detail {
+  height: 80px;
+  p {
+    line-height: 30px;
+  }
 }

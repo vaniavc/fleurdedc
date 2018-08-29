@@ -1,6 +1,5 @@
 @import 'src/assets/stylesheets/container';
 
-
 // .container-home {
 //     margin: 0px auto;
 //     position: relative;
@@ -11,34 +10,34 @@
 
 /* heading */
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 h2 {
-    font-size: 35px;
+  font-size: 35px;
 }
 h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 /* homepage */
 .background {
-    // background: yellow;
-    background: url(src/assets/images/rose.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px auto;
-    min-height: 100vh;
+  // background: yellow;
+  background: url(/src/assets/images/rose.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px auto;
+  min-height: 100vh;
 }
 
 button {
-    height: 48px;
-    padding-left: 24px;
-    padding-right: 24px;
-    color: #fff;
-    background-color: #222;
-    border-color: #222;
-    border: 1px solid #666;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: #fff;
+  background-color: #222;
+  border-color: #222;
+  border: 1px solid #666;
 }
 
 // .container-bestseller {
@@ -50,7 +49,7 @@ button {
 
 /* best seller */
 .box-item {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 // .container {
@@ -59,5 +58,3 @@ button {
 //     width: 100%;
 //     max-width: 1200px;
 // }
-
-
