@@ -8,15 +8,11 @@ img {
 }
 
 .box {
-  //background:yellow;
-  background: $white;
+  background: $brokenwhite;
   padding: 5px;
   margin-bottom: 12px;
 }
 
 .box-detail {
-  height: 80px;
-  p {
-    line-height: 30px;
-  }
+  height: 65px;
 }

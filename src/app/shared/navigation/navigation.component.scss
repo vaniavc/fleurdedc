@@ -5,13 +5,13 @@
 .nav {
   position: fixed;
   z-index: 900;
-  background-color: $background;
+  background: url('/src/assets/images/leaf.jpg') repeat;
+  //background-color: $background;
   top: 0;
   height: 100px;
 }
 
 .header {
-  //font-size:$font-header;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }

@@ -100,5 +100,25 @@ export const FLOWERS: Flower[] = [
       'https://images.unsplash.com/photo-1453372755486-254d0e724b38?ixlib=rb-0.3.5&s=00780cd14366bdde31120d9776a001a1&auto=format&fit=crop&w=1052&q=80',
     category: 'vase',
     tags: ['']
+  },
+  {
+    id: 11,
+    name: 'Flower 10',
+    price: '$1000',
+    image:
+      // tslint:disable-next-line:max-line-length
+      'https://images.unsplash.com/photo-1453372755486-254d0e724b38?ixlib=rb-0.3.5&s=00780cd14366bdde31120d9776a001a1&auto=format&fit=crop&w=1052&q=80',
+    category: 'vase',
+    tags: ['']
+  },
+  {
+    id: 12,
+    name: 'Flower 10',
+    price: '$1000',
+    image:
+      // tslint:disable-next-line:max-line-length
+      'https://images.unsplash.com/photo-1453372755486-254d0e724b38?ixlib=rb-0.3.5&s=00780cd14366bdde31120d9776a001a1&auto=format&fit=crop&w=1052&q=80',
+    category: 'vase',
+    tags: ['']
   }
 ];

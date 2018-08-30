@@ -1,6 +1,9 @@
-<div class="container body c-gold">
-    <h3 style="text-align:center">SUBSCRIPTIONS</h3>
-    <div class="box-item" fxLayout="row" fxLayoutGap="20px">
-        <app-box fxFlex="24" *ngFor="let flower of flowers | slice:0:4" [flower]="flower"></app-box>
+<div class="container c-gold">
+    <div class="body">
+        <h3 style="text-align:center">SUBSCRIPTIONS</h3>
+        <div class="box-item" fxLayout="row wrap" fxLayoutAlign="space-between center">
+            <app-box fxFlex.gt-md="24" fxFlex.gt-xs="48" fxFlex.xs="100" *ngFor="let flower of flowers | slice:0:4"
+                [flower]="flower"></app-box>
+        </div>
     </div>
 </div>

@@ -1,0 +1,11 @@
+@import 'src/assets/stylesheets/color';
+
+button {
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: $brokenwhite;
+  background-color: #222;
+  border-color: $brokenwhite;
+  border: 1px solid $gold;
+}

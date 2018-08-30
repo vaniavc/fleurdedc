@@ -1,6 +1,10 @@
 .container {
-    margin: 0px auto;
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
+  margin: 0px auto;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  @media (max-width: 1200px) {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 }

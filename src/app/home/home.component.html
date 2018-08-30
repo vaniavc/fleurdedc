@@ -1,24 +1,17 @@
-<div class="background c-gold" fxLayoutAlign="center center">
+<div class="background c-gold" fxLayout="column" fxLayoutAlign="center center">
     <div class="container" fxLayout="column" fxLayoutAlign="center center">
-        <h1>Flower & Gift Delivery, Through The Letterbox
-        </h1>
-        <h2>Shop our latest floral designs, plants and gifts with free next day delivery</h2>
+        <h1 class="fs-40" style="letter-spacing: 2px;">Flower & Gift Delivery, Through
+            The Letterbox</h1>
+        <h2 style="letter-spacing: 1px;">Shop our latest floral designs, plants and
+            gifts with free next day delivery</h2>
         <button>SHOP SALE</button>
     </div>
 </div>
 
 <div class="container c-gold">
     <h3 style="text-align:center">BEST SELLER</h3>
-    <div class="box-item" fxLayout="row" fxLayoutGap="20px">
-        <app-box fxFlex="24" *ngFor="let flower of flowers | slice:0:4" [flower]="flower"></app-box>
+    <div class="box-item" fxLayout="row wrap" fxLayoutAlign="space-between center">
+        <app-box fxFlex.gt-md="24" fxFlex.gt-xs="49" fxFlex.xs="100" *ngFor="let flower of flowers | slice:0:4"
+            [flower]="flower"></app-box>
     </div>
 </div>
-
-<!-- <div class="box" fxLayout="column">
-            <img src="http://freebigpictures.com/wp-content/uploads/2009/09/daisy-flower.jpg"
-                alt="daisy">
-            <div class="box-detail" fxLayout="column" fxLayoutAlign="center center">
-                <p>Title</p>
-                <p>Price</p>
-            </div>
-        </div> -->

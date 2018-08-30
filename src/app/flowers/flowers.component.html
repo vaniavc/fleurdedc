@@ -1,8 +1,15 @@
 <div class="container c-gold">
     <div class="body">
         <h3 style="text-align:center">BOUQUET</h3>
-        <div class="box-item" fxLayout="row wrap" fxLayoutGap="12px">
-            <app-box fxFlex="24" *ngFor="let flower of flowers" [flower]="flower"></app-box>
+        <div class="box-item" fxLayout="row wrap" fxLayoutAlign="space-between start">
+            <app-box fxFlex.gt-md="24" fxFlex.md="48" fxFlex.lt-md="48" fxFlex.xs="100" *ngFor="let flower of flowers"
+                [flower]="flower"></app-box>
+            <div *ngIf="flowers.length%4 === 2 || 3 " fxFlex.gt-md="24" fxFlex.md="48" fxFlex.lt-md="48"
+                fxFlex.xs="100">
+            </div>
+            <div *ngIf="flowers.length%4 === 2 || 3 " fxFlex.gt-md="24" fxFlex.md="48" fxFlex.lt-md="48"
+                fxFlex.xs="100">
+            </div>
         </div>
     </div>
 </div>
