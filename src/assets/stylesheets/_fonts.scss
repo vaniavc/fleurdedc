@@ -6,11 +6,17 @@
   src: url('/src/assets/fonts/Butler_Regular.otf');
 }
 
+/* position*/
+.ta-center {
+  text-align: center;
+}
+
 p {
   margin: 0;
   line-height: 25px;
 }
 
+/* font size */
 .fs-40 {
   font-size: 40px;
   margin: 0;

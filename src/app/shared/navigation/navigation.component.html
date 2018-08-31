@@ -1,7 +1,9 @@
-<div class="container nav" fxLayout="column" fxLayoutAlign="center center" style="box-shadow: 0.5px 0.5px 1px rgba(250,220,0,0.5)">
-    <div class="header c-gold fs-35" routerLink="" style="letter-spacing: 1.5px;"> Fleur
-        de DC </div>
-    <div id="navigation" class="navigation" fxLayout="row" fxLayoutAlign="space-between center">
+<div class="container nav" [class.scrolled]="scrolled" fxLayout="column" fxLayout.lt-md="row"
+    fxLayoutAlign="center center" fxLayoutAlign.lt-md="space-between" style="box-shadow: 0.5px 0.5px 1px rgba(250,220,0,0.5)">
+    <div class="header c-gold fs-35" fxLayoutAlign.lt-md="start center" style="letter-spacing: 1.5px;">
+        <a routerLink="">Fleur de DC</a>
+    </div>
+    <div id="navigation" fxHide.lt-md class="navigation" fxLayout="row" fxLayoutAlign="space-between center">
         <nav fxLayout="row" fxLayoutAlign="center center" fxLayoutAlign.sm="end center" fxLayoutGap="3%"
             fxLayoutGap.sm="2%">
             <a routerLink="/flowers/bouquet">BOUQUET</a>
@@ -11,4 +13,40 @@
             <a routerLink="/workshop">WORKSHOPS</a>
         </nav>
     </div>
+
+    <div fxHide.gt-sm fxFlex class="sidenav" fxLayoutAlign="end center" mode="push">
+        <div class="hamburger-button" [ngClass]="{'open':hamburger}" (click)="hamburger = !hamburger">
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="hamburger-menus" fxLayout="column" fxLayoutAlign="start center" [ngClass]="{'slideInRight':hamburger, 'slideOutRight':!hamburger}">
+            <div class="hamburger-button" [ngClass]="{'open':hamburger}" (click)="hamburger = !hamburger">
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul fxLayout="column">
+                <div class="header c-gold" fxLayoutAlign.lt-md="start center" style="letter-spacing: 1.5px;">
+                    <li><a routerLink="" style="font-size: 40px;">Fleur de DC</a></li>
+                </div>
+                <li>
+                    <a routerLink="/flowers/bouquet">BOUQUET</a>
+                </li>
+                <li>
+                    <a routerLink="flowers/vase">VASE</a>
+                </li>
+                <li>
+                    <a routerLink="flowers/seasonal">SEASONAL</a>
+                </li>
+                <li>
+                    <a routerLink="/subscriptions">FLOWER SUBSCRIPTIONS</a>
+                </li>
+                <li>
+                    <a routerLink="/workshop">WORKSHOPS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
 </div>

@@ -9,6 +9,7 @@ body {
   font-family: Butler-Regular;
   color: white;
   height: 100%;
+  //position: relative;
   //background: url('/src/assets/images/background.jpg');
   background: $background;
 }
@@ -18,9 +19,10 @@ a {
 }
 
 .body {
+  position: relative;
   margin-top: 100px;
   height: 100%;
-  padding: 2vh 0;
+  padding: 5vh 0;
 }
 
 hr {

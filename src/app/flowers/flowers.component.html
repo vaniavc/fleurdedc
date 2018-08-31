@@ -2,7 +2,7 @@
     <div class="body">
         <h3 style="text-align:center">BOUQUET</h3>
         <div class="box-item" fxLayout="row wrap" fxLayoutAlign="space-between start">
-            <app-box fxFlex.gt-md="24" fxFlex.md="48" fxFlex.lt-md="48" fxFlex.xs="100" *ngFor="let flower of flowers"
+            <app-box fxFlex.gt-md="24" fxFlex.md="48" fxFlex.lt-md="48" fxFlex.xs="100" *ngFor="let flower of flowers | slice:0:8"
                 [flower]="flower"></app-box>
             <div *ngIf="flowers.length%4 === 2 || 3 " fxFlex.gt-md="24" fxFlex.md="48" fxFlex.lt-md="48"
                 fxFlex.xs="100">

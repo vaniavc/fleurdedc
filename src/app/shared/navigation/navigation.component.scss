@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 900;
   background: url('/src/assets/images/leaf.jpg') repeat;
-  //background-color: $background;
+  min-width: 100%;
   top: 0;
   height: 100px;
 }
@@ -29,4 +29,175 @@ nav {
 a {
   color: $gold;
   text-decoration: none;
+}
+
+/* sidenav */
+.sidenav {
+  .hamburger-button {
+    height: 80px;
+    width: 25px;
+    cursor: pointer;
+    span {
+      height: 3px;
+      width: 25px;
+      background-color: $gold;
+      position: absolute;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      &:first-child {
+        top: 34px;
+      }
+      &:last-child {
+        bottom: 34px;
+      }
+    }
+    &.open {
+      span {
+        &:first-child {
+          transform: rotate(-45deg);
+          top: 39px;
+        }
+        &:last-child {
+          transform: rotate(45deg);
+          bottom: 38px;
+        }
+      }
+    }
+  }
+
+  .hamburger-menus {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+
+    .hamburger-button {
+      position: fixed;
+      right: 20px;
+      //top: -10px;
+      top: 25px;
+    }
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: $background;
+    transform: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    &.open {
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+    &.close {
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      float: right;
+      width: 100%;
+
+      li:first-child {
+        margin-top: 50px;
+      }
+      li {
+        list-style-position: none;
+        font-weight: 600;
+        line-height: 30px;
+        color: $gold;
+        margin: 30px 0;
+      }
+
+      a,
+      span {
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        line-height: 30px;
+        text-decoration: none;
+        color: $gold;
+        &.active {
+          color: $gold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050) {
+  .menus {
+    ul {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+@-webkit-keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) translateZ(0);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) translateZ(0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0) translateZ(0);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+  }
+
+  to {
+    -webkit-transform: translate3d(100%, 0, 0) translateZ(0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+}
+
+.slideOutRight {
+  -webkit-animation-name: slidOutnRight;
+  animation-name: slideOutRight;
 }
