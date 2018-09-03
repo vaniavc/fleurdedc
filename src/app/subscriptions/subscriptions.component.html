@@ -1,24 +1,27 @@
 <div class="container c-gold">
     <div class="body">
-        <h3 style="text-align:center">SUBSCRIPTIONS</h3>
+        <h3 class="title" style="text-align:center">SUBSCRIPTIONS</h3>
         <div class="box-item" fxLayout="row wrap" fxLayoutAlign="space-between center">
             <app-box fxFlex.gt-md="24" fxFlex.gt-xs="48" fxFlex.xs="100" *ngFor="let flower of flowers | slice:0:4"
                 [flower]="flower"></app-box>
         </div>
-        <div class="container" fxLayoutAlign="center center" style="text-align: center">
-            We send our letterbox flowers via Royal Mail's Tracked service for free next day
-            flower delivery, straight through the door with the other post. Place
-            your order before 10pm Monday to Friday, the day before the flowers are
-            due. Although this isn’t a guaranteed next day service, in 94% cases
-            the flowers sent via Royal Mail Tracked will be delivered on the chosen
-            day. We'll send you an email with a tracking link so you can follow the
-            progress of your flowers. For big birthdays, anniversaries or just added
-            peace of mind we offer a guaranteed next day delivery service to the
-            majority of the UK via DPD Courier. You have until 5.30pm the day before
-            delivery to place your order for guaranteed DPD courier delivery, and
-            on the day the flowers are due to arrive you'll be notified about the
-            1-hour delivery window and will be able to track your flowers on their
-            journey, so you’ll know they've safely reached their destination.
+        <div class="container box" fxLayout="row wrap" fxLayoutAlign="center center" style="text-align: center; margin-top: 80px;">
+            <p style="margin-bottom: 10px;">We send our letterbox flowers via Royal
+                Mail's Tracked service for free next day flower delivery, straight
+                through the door with the other post. Place your order before 10pm
+                Monday to Friday, the day before the flowers are due. Although this
+                isn’t a guaranteed next day service, in 94% cases the flowers sent
+                via Royal Mail Tracked will be delivered on the chosen day. We'll
+                send you an email with a tracking link so you can follow the progress
+                of your flowers.</p>
+            <p style="margin-bottom: 10px;">For big birthdays, anniversaries or just
+                added peace of mind we offer a guaranteed next day delivery service
+                to the majority of the UK via DPD Courier.</p>
+            <p>You have until 5.30pm the day before delivery to place your order
+                for guaranteed DPD courier delivery, and on the day the flowers are
+                due to arrive you'll be notified about the 1-hour delivery window
+                and will be able to track your flowers on their journey, so you’ll
+                know they've safely reached their destination.</p>
         </div>
     </div>
 </div>

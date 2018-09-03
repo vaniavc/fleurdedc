@@ -1,7 +1,15 @@
 @import 'src/assets/stylesheets/container';
+@import 'src/assets/stylesheets/color';
 
 // .body {
 //   margin-top: 50px;
 //   height: 100%;
 //   padding: 100px 0;
 // }
+.box {
+  background-color: $background;
+  border: 1.5px solid $gold;
+  width: 100%;
+  padding: 40px;
+  opacity: 0.7;
+}

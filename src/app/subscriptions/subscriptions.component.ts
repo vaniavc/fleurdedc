@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Flower } from '../flower';
-import { FLOWERS } from '../flowers';
+import { FlowerService } from '../flower.service';
+// import { FLOWERS } from '../flowers';
 
 @Component({
   selector: 'app-subscriptions',
@@ -9,8 +10,19 @@ import { FLOWERS } from '../flowers';
   styleUrls: ['./subscriptions.component.scss']
 })
 export class SubscriptionsComponent implements OnInit {
-  flowers = FLOWERS;
-  constructor() {}
+  // flowers = FLOWERS;
+  flowers: Flower[];
 
-  ngOnInit() {}
+  constructor(private flowerService: FlowerService) {}
+
+  ngOnInit() {
+    this.getFlowers();
+  }
+
+  getFlowers() {
+    // this.flowers = this.flowerService.getFlowers();
+    this.flowerService
+      .getFlowers()
+      .subscribe(flowers => (this.flowers = flowers));
+  }
 }

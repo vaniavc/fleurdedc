@@ -10,8 +10,11 @@ body {
   color: white;
   height: 100%;
   //position: relative;
-  //background: url('/src/assets/images/background.jpg');
-  background: $background;
+  background: url('/src/assets/images/black.jpg');
+  //background: $background;
+  @media (max-width: 599px) {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -21,10 +24,17 @@ a {
 .body {
   position: relative;
   margin-top: 100px;
+  margin-bottom: 180px;
   height: 100%;
   padding: 5vh 0;
 }
 
 hr {
   color: $gold;
+}
+
+.title {
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 3px;
 }

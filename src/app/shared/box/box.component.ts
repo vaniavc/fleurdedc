@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { Flower } from 'src/app/flower';
+// import { FlowerService } from 'src/app/flower.service';
 import { FLOWERS } from 'src/app/flowers';
 
 @Component({

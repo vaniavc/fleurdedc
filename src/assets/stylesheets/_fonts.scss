@@ -6,6 +6,11 @@
   src: url('/src/assets/fonts/Butler_Regular.otf');
 }
 
+@font-face {
+  font-family: 'Butler_Light';
+  src: url('/src/assets/fonts/Butler_Light.otf');
+}
+
 /* position*/
 .ta-center {
   text-align: center;
@@ -21,6 +26,9 @@ p {
   font-size: 40px;
   margin: 0;
   line-height: 40px;
+  @media (max-width: 599px) {
+    font-size: 30px;
+  }
 }
 
 .fs-35 {
@@ -33,4 +41,10 @@ p {
   font-size: 30px;
   margin: 0;
   line-height: 40px;
+}
+
+h2 {
+  @media (max-width: 599px) {
+    font-size: 18px;
+  }
 }

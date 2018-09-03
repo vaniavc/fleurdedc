@@ -5,7 +5,8 @@
 .nav {
   position: fixed;
   z-index: 900;
-  background: url('/src/assets/images/leaf.jpg') repeat;
+  //background: url('/src/assets/images/leaf.jpg') repeat;
+  background: $background;
   min-width: 100%;
   top: 0;
   height: 100px;
@@ -44,21 +45,23 @@ a {
       position: absolute;
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       &:first-child {
-        top: 34px;
+        top: 40px;
       }
       &:last-child {
-        bottom: 34px;
+        bottom: 40px;
       }
     }
     &.open {
       span {
         &:first-child {
           transform: rotate(-45deg);
-          top: 39px;
+          //top: 39px;
+          top: 40px;
         }
         &:last-child {
           transform: rotate(45deg);
-          bottom: 38px;
+          //bottom: 38px;
+          top: 40px;
         }
       }
     }
@@ -75,6 +78,7 @@ a {
       top: 25px;
     }
     position: fixed;
+    margin-top: 102px;
     top: 0;
     right: 0;
     width: 100%;
@@ -107,7 +111,7 @@ a {
         font-weight: 600;
         line-height: 30px;
         color: $gold;
-        margin: 30px 0;
+        margin: 20px 0;
       }
 
       a,

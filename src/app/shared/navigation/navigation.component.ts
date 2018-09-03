@@ -3,7 +3,8 @@ import { DOCUMENT } from '@angular/platform-browser';
 import { WINDOW } from '../window.service';
 
 import { Flower } from 'src/app/flower';
-import { FLOWERS } from 'src/app/flowers';
+
+// import { FLOWERS } from 'src/app/flowers';
 
 @Component({
   selector: 'app-navigation',

@@ -1,5 +1,5 @@
 <div class="container nav" [class.scrolled]="scrolled" fxLayout="column" fxLayout.lt-md="row"
-    fxLayoutAlign="center center" fxLayoutAlign.lt-md="space-between" style="box-shadow: 0.5px 0.5px 1px rgba(250,220,0,0.5)">
+    fxLayoutAlign="center center" fxLayoutAlign.lt-md="space-between" style="box-shadow: 0px 2px 0px rgb(197, 162, 110)">
     <div class="header c-gold fs-35" fxLayoutAlign.lt-md="start center" style="letter-spacing: 1.5px;">
         <a routerLink="">Fleur de DC</a>
     </div>
@@ -20,29 +20,23 @@
             <span></span>
         </div>
         <nav class="hamburger-menus" fxLayout="column" fxLayoutAlign="start center" [ngClass]="{'slideInRight':hamburger, 'slideOutRight':!hamburger}">
-            <div class="hamburger-button" [ngClass]="{'open':hamburger}" (click)="hamburger = !hamburger">
-                <span></span>
-                <span></span>
-            </div>
-
             <ul fxLayout="column">
-                <div class="header c-gold" fxLayoutAlign.lt-md="start center" style="letter-spacing: 1.5px;">
-                    <li><a routerLink="" style="font-size: 40px;">Fleur de DC</a></li>
-                </div>
                 <li>
-                    <a routerLink="/flowers/bouquet">BOUQUET</a>
+                    <a routerLink="/flowers/bouquet" (click)="hamburger=! hamburger">BOUQUET</a>
                 </li>
                 <li>
-                    <a routerLink="flowers/vase">VASE</a>
+                    <a routerLink="flowers/vase" (click)="hamburger=! hamburger">VASE</a>
                 </li>
                 <li>
-                    <a routerLink="flowers/seasonal">SEASONAL</a>
+                    <a routerLink="flowers/seasonal" (click)="hamburger=! hamburger ">SEASONAL</a>
                 </li>
                 <li>
-                    <a routerLink="/subscriptions">FLOWER SUBSCRIPTIONS</a>
+                    <a routerLink="/subscriptions" (click)="hamburger=! hamburger ">FLOWER
+                        SUBSCRIPTIONS
+                    </a>
                 </li>
                 <li>
-                    <a routerLink="/workshop">WORKSHOPS</a>
+                    <a routerLink="/workshop" (click)="hamburger=! hamburger ">WORKSHOPS</a>
                 </li>
             </ul>
         </nav>
