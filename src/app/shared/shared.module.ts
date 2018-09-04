@@ -4,13 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { WINDOW_PROVIDERS } from './window.service';
+import { DragScrollModule } from 'ngx-drag-scroll';
 
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { BoxComponent } from './box/box.component';
 
 @NgModule({
-  imports: [CommonModule, FlexLayoutModule, RouterModule],
+  imports: [CommonModule, FlexLayoutModule, RouterModule, DragScrollModule],
   exports: [
     CommonModule,
     HttpClientModule,

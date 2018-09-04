@@ -30,6 +30,7 @@ export class FlowersComponent implements OnInit {
       console.log('CAT ID', this.idCat);
 
       this.getFlowers();
+      console.log(this.flowers, 'FLOWERS');
     });
   }
 
@@ -38,6 +39,9 @@ export class FlowersComponent implements OnInit {
 
     this.flowerService
       .getFlowers()
-      .subscribe(flowers => (this.flowers = flowers));
+      .subscribe(
+        flowers =>
+          (this.flowers = flowers.filter(data => data.category === this.idCat))
+      );
   }
 }
