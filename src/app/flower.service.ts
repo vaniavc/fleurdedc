@@ -6,16 +6,16 @@ import { Flower } from './flower';
 import { FLOWERS } from './flowers';
 
 @Injectable({
-    providedIn: 'root'
+  providedIn: 'root'
 })
 export class FlowerService {
-    constructor() { }
+  constructor() {}
 
-    getFlowers(): Observable<Flower[]> {
-        return of(FLOWERS);
-    }
+  getFlowers(): Observable<Flower[]> {
+    return of(FLOWERS);
+  }
 
-    getFlower(id: number): Observable<Flower> {
-        return of(FLOWERS.find(flower => flower.id === id));
-    }
+  getFlower(id: number): Observable<Flower> {
+    return of(FLOWERS.find(flower => flower.id === id));
+  }
 }

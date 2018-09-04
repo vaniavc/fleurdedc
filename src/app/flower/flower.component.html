@@ -2,11 +2,10 @@
     <div class="body" fxLayout="row wrap" fxLayoutAlign="space-between center">
         <div fxLayout="column" fxLayoutAlign="center center" fxFlex.gt-md="45" fxFlex.md="45"
             fxFlex.lt-md="100">
-            <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-0.3.5&s=af1fd42fb4eac5f361ae1b544f31a5fc&auto=format&fit=crop&w=500&q=80"
-                alt="rose" style="width: 90%; height: auto;">
+            <img src="{{flower.image}}" alt="rose">
         </div>
-        <div fxLayout="column" fxFlex.gt-md="50" fxFlex.md="50" fxFlex.lt-md="100">
-            <h2 class="title" style="text-align: center">Flower 4</h2>
+        <div fxLayout="column" fxFlex.gt-md="50" fxFlex.md="50" fxFlex.lt-md="100" *ngIf="flower">
+            <h2 class="title" style="text-align: center">{{flower.name}}</h2>
             <span style="text-align: justify; line-height: 25px;">
                 Our flower team love to come up with fresh (and gorgeous!) new creations for these
                 limited edition bouquets, made from a selection of favourite stems
@@ -32,6 +31,27 @@
                         colours may vary or we'll substitute stems to give you the
                         highest quality bouquet.</li>
                 </ul>
+            </span>
+        </div>
+        <div class="container box" fxLayout="column wrap" fxFlex.gt-md="100" fxFlex.lt-md="100"
+            style="margin-top: 20px;">
+            <span style="text-align: center; line-height: 25px;">
+                <i>Love love love Fleur De DC. I chose Fleur De DC as they’re products
+                    looked fabulous , lovely choices of letter box flower collections
+                    . So many to choose from but I chose the Lavender Meadow collection
+                    and the Soliel , both were stunning ,fragranced and the receivers
+                    loved them as much as I did. I’m so taken with it I’m signing
+                    up for the bouquet a month package to bring a little cheer to
+                    my home as each one will be different, so it will be a surprise
+                    which is exciting in itself. Very Reasonably priced for £’s per
+                    stem with delivery included, and nicely gift boxed , prompt service
+                    and really hassle free. I got money off for my first order if
+                    I bought another in 7 days which I did , got another discount
+                    with the 2nd and to leave a review offeredeven another money
+                    off voucher . I like that a lot. Will be recommending to everyone
+                    I know without a doubt . Well done B&W x</i>
+                <p>- Ally -</p>
+
             </span>
         </div>
     </div>
